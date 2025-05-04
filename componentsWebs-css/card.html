@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Card</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .card {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+      }
+      /* .card-item {
+                background-color: rgb(0, 0, 0);
+              } */
+      .card-description {
+        padding: 1.5rem 1rem;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+          rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        text-align: center;
+      }
+      .card-item {
+        background-color: rgba(0, 0, 0, 0.95);
+      }
+      .card-image {
+        --bg: rgb(18, 18, 18);
+        --bg-d: rgb(0, 0, 0);
+        mask: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 55%);
+        height: 100%;
+      }
+
+      .card-image img {
+        height: 100%;
+        width: 100%;
+        /* filter: grayscale(1); */
+        /* aspect-ratio: 2/1; */
+
+        /* aspect-ratio: 1 / 1;
+        aspect-ratio: 2 / 1;
+        aspect-ratio: 1 / 2;
+        aspect-ratio: 16 / 9; */
+      }
+    </style>
+  </head>
+  <body>
+    <main class="full-screen">
+      <section class="card container">
+        <!-- <article class="card-item">
+          <div class="card-image">
+            <img src="assets/img-9.jpeg" alt="" />
+          </div>
+          <div class="card-description">
+            <h3>Article one</h3>
+          </div>
+        </article>
+        <article class="card-item">
+          <div class="card-image">
+            <img src="assets/person.avif" alt="" />
+          </div>
+          <div class="card-description">
+            <h3>Article two</h3>
+          </div>
+        </article>
+        <article class="card-item">
+          <div class="card-image">
+            <img src="assets/team-1.avif" alt="" />
+          </div>
+          <div class="card-description">
+            <h3>Article three</h3>
+          </div>
+        </article> -->
+
+        <article class="card-item">
+          <div class="card-image">
+            <img src="assets/team-1.avif" alt="" />
+          </div>
+          <div class="card-description">
+            <h3>Article one</h3>
+          </div>
+        </article>
+        <article class="card-item">
+          <div class="card-image">
+            <img src="assets/team-2.avif" alt="" />
+          </div>
+          <div class="card-description">
+            <h3>Article two</h3>
+          </div>
+        </article>
+        <article class="card-item">
+          <div class="card-image">
+            <img src="assets/team-3.avif" alt="" />
+          </div>
+          <div class="card-description">
+            <h3>Article three</h3>
+          </div>
+        </article>
+        <article class="card-item">
+          <div class="card-image">
+            <img src="assets/team-4.avif" alt="" />
+          </div>
+          <div class="card-description">
+            <h3>Article three</h3>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

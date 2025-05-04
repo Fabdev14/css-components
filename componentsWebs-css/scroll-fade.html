@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      .scroll {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+      }
+
+      .block {
+        animation: appear 5s linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+      }
+
+      @keyframes appear {
+        from {
+          opacity: 0;
+          scale: 0.4;
+        }
+        to {
+          opacity: 1;
+          scale: 1;
+        }
+      }
+      .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10rem 0;
+      }
+
+      .block img {
+        filter: grayscale(1);
+      }
+    </style>
+
+    <section class="scroll container">
+      <div class="block">
+        <img src="assets/img-2.avif" alt="" />
+      </div>
+      <div class="block">
+        <img src="assets/img-2.avif" alt="" />
+      </div>
+      <div class="block">
+        <img src="assets/img-2.avif" alt="" />
+      </div>
+      <div class="block">
+        <img src="assets/img-2.avif" alt="" />
+      </div>
+      <div class="block">
+        <img src="assets/img-2.avif" alt="" />
+      </div>
+      <div class="block">
+        <img src="assets/img-2.avif" alt="" />
+      </div>
+      <div class="block">
+        <img src="assets/img-2.avif" alt="" />
+      </div>
+      <div class="block">
+        <img src="assets/img-2.avif" alt="" />
+      </div>
+      <div class="block">
+        <img src="assets/img-2.avif" alt="" />
+      </div>
+      <div class="block">
+        <img src="assets/img-2.avif" alt="" />
+      </div>
+      <div class="block">
+        <img src="assets/img-2.avif" alt="" />
+      </div>
+      <div class="block">
+        <img src="assets/img-2.avif" alt="" />
+      </div>
+      <div class="block">
+        <img src="assets/img-2.avif" alt="" />
+      </div>
+      <div class="block">
+        <img src="assets/img-2.avif" alt="" />
+      </div>
+    </section>
+  </body>
+</html>

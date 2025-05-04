@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <div class="bg-container container">
+      <div class="bg-grid">
+        <div class="bg-box">
+          <div class="bg-box-item bg-item-gradient"></div>
+        </div>
+        <div class="bg-box">
+          <div class="bg-box-item bg-item-gradient"></div>
+        </div>
+        <div class="bg-box">
+          <div class="bg-box-item bg-item-gradient"></div>
+        </div>
+        <div class="bg-box">
+          <div class="bg-box-item bg-item-gradient"></div>
+        </div>
+        <div class="bg-box">
+          <div class="bg-box-item bg-item-gradient"></div>
+        </div>
+        <div class="bg-box">
+          <div class="bg-box-item bg-item-gradient"></div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .bg-container {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .bg-grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3px;
+      }
+      .bg-box {
+        position: relative;
+        width: 100%;
+        height: 150px;
+      }
+
+      .bg-box:nth-child(1) {
+        background-color: rgb(221, 16, 0);
+      }
+      .bg-box:nth-child(2) {
+        background-color: rgb(14, 142, 233);
+      }
+      .bg-box:nth-child(3) {
+        background-color: rgb(43, 48, 59);
+      }
+      .bg-box:nth-child(4) {
+        background-color: #fc9702;
+      }
+      .bg-box:nth-child(5) {
+        background-color: rgb(0, 255, 255);
+      }
+      .bg-box:nth-child(6) {
+        background-color: gray;
+      }
+      .bg-box-item {
+        bottom: 0px;
+        flex: 0 0 auto;
+        overflow: hidden;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        z-index: 1;
+      }
+
+      .bg-item-gradient {
+        background: conic-gradient(
+          from 180deg at 50% 50%,
+          rgba(0, 0, 0, 0.5) 0deg,
+          rgba(0, 0, 0, 0) 360deg
+        );
+        opacity: 1;
+      }
+    </style>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background: #000;
+      }
+      .box {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .box-part {
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        position: sticky;
+        top: 0;
+        width: 100%;
+      }
+      .box-part-content {
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+        border-radius: 20px;
+        flex-flow: column;
+        justify-content: center;
+        align-items: stretch;
+        height: 600px;
+        display: flex;
+        overflow: hidden;
+        position: relative;
+      }
+      .box-child {
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+        justify-content: center;
+        align-items: center;
+        transform: translate(0) rotate(-7.5deg);
+
+        flex-direction: row;
+        align-items: flex-start;
+        display: flex;
+      }
+      .box-child-img {
+        flex: none;
+        width: 38%;
+        height: 266px;
+      }
+      .box-child-img > img {
+        border-radius: 15px;
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+      }
+    </style>
+    <section class="container">
+      <aside class="box">
+        <div class="box-part">
+          <div class="box-part-content">
+            <div class="box-child">
+              <div class="box-child-img">
+                <img src="assets/img-1.avif" alt="" />
+              </div>
+              <div class="box-child-img">
+                <img src="assets/img-2.avif" alt="" />
+              </div>
+              <div class="box-child-img">
+                <img src="assets/img-3.avif" alt="" />
+              </div>
+            </div>
+            <div class="box-child">
+              <div class="box-child-img">
+                <img src="assets/img-4.avif" alt="" />
+              </div>
+              <div class="box-child-img">
+                <img src="assets/img-6.webp" alt="" />
+              </div>
+              <div class="box-child-img">
+                <img src="assets/img-7.avif" alt="" />
+              </div>
+            </div>
+            <div class="box-child">
+              <div class="box-child-img">
+                <img src="assets/img-8.webp" alt="" />
+              </div>
+              <div class="box-child-img">
+                <img src="assets/img-9.jpeg" alt="" />
+              </div>
+              <div class="box-child-img">
+                <img src="assets/team-3.avif" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <article class="box-img">
+        <img src="assets/img-1.avif" alt="" />
+      </article>
+
+      <style>
+        .box-img {
+          position: relative;
+          width: 400px;
+          height: 500px;
+          margin: 5rem auto;
+          border-radius: 1.5rem;
+
+          background: rgb(63, 35, 245);
+          background: radial-gradient(
+            circle,
+            rgba(63, 35, 245, 1) 0%,
+            rgba(255, 255, 255, 1) 100%
+          );
+          border: 2px solid lavender;
+        }
+
+        .box-img img {
+          width: 100%;
+          height: 100%;
+          object-fit: fill;
+          border-radius: 1.5rem;
+          filter: grayscale(1);
+        }
+
+        .box-img::after {
+          content: "";
+          position: absolute;
+          filter: blur(25px) saturate(1.5);
+          width: 100%;
+          height: 100%;
+          scale: 1.05;
+          z-index: -1;
+          background: inherit;
+          top: 0;
+          left: 0;
+        }
+      </style>
+    </section>
+  </body>
+</html>

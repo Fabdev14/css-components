@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+
+    <style>
+      .text {
+        font-size: 20px;
+      }
+
+      .text-mk {
+        background: transparent;
+      }
+
+      .text-mk-bg {
+        --yellow: rgba(255, 195, 0, 0.8);
+        background: linear-gradient(120deg, var(--yellow) 50%, transparent 50%)
+          110% 0 / 200% 100% no-repeat;
+        background-position: calc((1 - var(--yellow)) * 110%) 0;
+        padding: 0 0.3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <p class="text">
+        Mira que te mando que te esfuerces y
+        <mark class="text-mk">
+          <span class="text-mk-bg"> seas valiente no temas ni desmayes </span>
+        </mark>
+        porque yo estoy contigo
+      </p>
+    </section>
+  </body>
+</html>
